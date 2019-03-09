@@ -1,0 +1,44 @@
+$h1Color: #f00;
+
+@page {
+  margin: 0;
+  padding: 0;
+  size: A4 landscape;
+  margin-left: 4cm;
+  margin-right: 1cm;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.page {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    page-break-after: always;
+}
+
+.page.landscape {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+.page.portrait {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+h1 {
+  color: $h1Color;
+}
+
+#logo img {
+  max-width: 4cm;
+  max-height: 4cm;
+}

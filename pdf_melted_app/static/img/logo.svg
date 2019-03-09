@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="132.29167mm"
+   height="132.29167mm"
+   viewBox="0 0 132.29167 132.29167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (11504fc906, 2018-09-15)"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="1161.4285"
+     inkscape:cy="531.42859"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(377.22022,-156.39286)">
+    <g
+       id="g827"
+       transform="matrix(0.57003254,0,0,0.57003254,-162.19242,124.12495)">
+      <rect
+         ry="0.52916664"
+         rx="0.52916664"
+         y="56.607143"
+         x="-377.22021"
+         height="232.07739"
+         width="232.07739"
+         id="rect815"
+         style="opacity:1;fill:#ed9227;fill-opacity:1;stroke:none;stroke-width:1.58749998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="55.940475"
+         cy="172.64584"
+         cx="-261.18152"
+         id="path817"
+         style="opacity:1;fill:#000080;fill-opacity:1;stroke:none;stroke-width:1.58749998;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text821"
+         y="280.21719"
+         x="-370.09045"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.31718636px;line-height:1.25;font-family:'Humanist 777';-inkscape-font-specification:'Humanist 777 Bold';opacity:1;fill:#000080;fill-opacity:1;stroke:none;stroke-width:17.56104851;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="stroke-width:17.56104851"
+           y="280.21719"
+           x="-370.09045"
+           id="tspan819"
+           sodipodi:role="line">COMPANY LOGO</tspan></text>
+    </g>
+  </g>
+</svg>
