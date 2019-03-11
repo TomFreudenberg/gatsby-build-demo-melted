@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import PdfSample from "./pdf_documents/pdf_sample.pdf" // Tell Webpack this JS file uses this PDF
 
 export default () =>
 
@@ -8,6 +7,6 @@ export default () =>
     <h1>Hello world!</h1>
     <p>
       Example to generate and build and include Pdf documents. <br/>
-      <Link to={PdfSample}>Read PdfSample</Link>
+      <a href="./pdf_documents/pdf_sample.pdf">View sample PDF</a>
     </p>
   </div>

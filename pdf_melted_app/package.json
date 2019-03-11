@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "postbuild": "find ./public -type f -path \"*/pdf_*/*\" -name \"*.html\" -exec node bin/puppeteer-to-pdf.js \"{}\" \"public/pdf_documents\" \\;",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
