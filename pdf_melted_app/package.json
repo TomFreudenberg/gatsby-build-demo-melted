@@ -5,8 +5,10 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "postbuild": "find ./public -type f -path \"*/pdf_*/*\" -name \"*.html\" -exec node bin/puppeteer-to-pdf.js \"{}\" \"public/pdf_documents\" \\;",
+    "build": "npm run build:pdf && npm run build:app",
+    "build:app": "cross-env EXCLUDE_PDF=true gatsby build",
+    "build:pdf": "gatsby build",
+    "postbuild:pdf": "find ./public -type f -path \"*/pdf_*/*\" -name \"*.html\" -exec node bin/puppeteer-to-pdf.js \"{}\" \"static/pdf_documents\" \\;",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
@@ -22,6 +24,8 @@
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
+    "crossenv": "^0.0.2-security",
     "prettier": "^1.16.4"
   },
   "repository": {
