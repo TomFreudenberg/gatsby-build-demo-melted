@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "crossenv": "^0.0.2-security",
     "gatsby": "^2.1.27",
     "gatsby-plugin-sass": "^2.0.1",
     "node-sass": "^4.9.0",
