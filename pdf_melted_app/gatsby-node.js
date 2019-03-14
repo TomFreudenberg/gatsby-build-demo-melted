@@ -1,7 +1,13 @@
 const excludePDF = process.env.EXCLUDE_PDF
 
-exports.onCreatePage = function onCreatePage({ actions, page }) {
-  if (excludePDF && page.path.startsWith('/pdf_documents')) {
-    actions.deletePage(page)
+exports.onCreateNode = async ({ node, actions }) => {
+  if (!excludePDF && node.sourceInstanceName && node.sourceInstanceName.startsWith('pdf') && node.internal && (node.internal.mediaType === 'application/javascript')) {
+    actions.createPage({
+      path: `/pdf_documents/` + node.name,
+      component: node.absolutePath,
+      context: {
+        id: node.id,
+      },
+    });
   }
 }

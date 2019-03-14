@@ -1,6 +1,6 @@
 import React from "react"
 
-import styles from "../../styles/pdf.scss"
+import styles from "../styles/pdf.scss"
 
 export default () =>
   <div id="pdf">

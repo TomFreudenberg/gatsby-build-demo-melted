@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "npm run build:pdf && npm run build:app",
+    "build": "npm run build:pdf && npm run clean && npm run build:app",
     "build:app": "cross-env EXCLUDE_PDF=true gatsby build",
     "build:pdf": "gatsby build",
     "postbuild:pdf": "find ./public -type f -path \"*/pdf_*/*\" -name \"*.html\" -exec node bin/puppeteer-to-pdf.js \"{}\" \"static/pdf_documents\" \\;",
@@ -13,12 +13,14 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
     "cross-env": "^5.2.0",
     "gatsby": "^2.1.27",
     "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-source-filesystem": "^2.0.23",
     "node-sass": "^4.9.0",
     "puppeteer": "^1.12.2",
     "react": "^16.8.4",

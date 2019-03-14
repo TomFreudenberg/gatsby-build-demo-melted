@@ -1,5 +1,12 @@
 module.exports = {
   plugins: [
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pdf`,
+        path: `./src/pdf_documents/`,
+      }
+    }
   ]
 }
