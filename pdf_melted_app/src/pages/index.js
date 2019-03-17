@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+
+import pdf_sample from "../pdf_documents/pdf_sample.pdf"
 
 export default () =>
 
@@ -7,6 +8,6 @@ export default () =>
     <h1>Hello world!</h1>
     <p>
       Example to generate and build and include Pdf documents. <br/>
-      <a href="./pdf_documents/pdf_sample.pdf">View sample PDF</a>
+      <a href={pdf_sample}>View sample PDF</a>
     </p>
   </div>

@@ -1,7 +1,8 @@
-const excludePDF = process.env.EXCLUDE_PDF
+const buildAPP = process.env.BUILD_APP
+const buildPDF = process.env.BUILD_PDF
 
 exports.onCreateNode = async ({ node, actions }) => {
-  if (!excludePDF && node.sourceInstanceName && node.sourceInstanceName.startsWith('pdf') && node.internal && (node.internal.mediaType === 'application/javascript')) {
+  if (buildPDF && node.sourceInstanceName && node.sourceInstanceName.startsWith('pdf') && node.internal && (node.internal.mediaType === 'application/javascript')) {
     actions.createPage({
       path: `/pdf_documents/` + node.name,
       component: node.absolutePath,
@@ -9,5 +10,11 @@ exports.onCreateNode = async ({ node, actions }) => {
         id: node.id,
       },
     });
+  }
+}
+
+exports.onCreatePage = function onCreatePage({ actions, page }) {
+  if (!buildAPP) {
+    actions.deletePage(page);
   }
 }
