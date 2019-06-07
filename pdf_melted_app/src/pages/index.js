@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export default () =>
 
   <div id="helloWorld">
-    <h1>Hello world!</h1>
+    <h1>Hello world from render!</h1>
     <p>
       Example to generate and build and include Pdf documents. <br/>
       <a href="./pdf_documents/pdf_sample.pdf">View sample PDF</a>
